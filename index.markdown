@@ -4,3 +4,7 @@
 
 layout: home
 ---
+
+## Blog Site
+
+This is a blog site for exploring and understanding the world.
