@@ -25,7 +25,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "/my-blog" # the subpath of your site, e.g. /blog
-url: https://fnazia.github.io # "https://fnazia.github.io" # the base hostname & protocol for your site, e.g. http://example.com , "http://localhost:4000"
+url: "https://fnazia.github.io" # "https://fnazia.github.io" # the base hostname & protocol for your site, e.g. http://example.com , "http://localhost:4000"
 twitter_username: jekyllrb
 github_username:  jekyll
 
@@ -55,13 +55,12 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-include: [_pages]
+include: [_pages, assets]
 
 # Defaults
 defaults:
   # _posts
-  -
-    scope:
+  - scope:
       type: posts
       path: _posts
     values:
@@ -70,13 +69,13 @@ defaults:
       permalink: /posts/:title/
       mathjax: true
   # _pages
-  - 
-    scope:
+  - scope:
       #path: ""
       type: pages
       path: _pages
     values:
       is_post: false
       layout: page
-      #permalink: /:title/
       mathjax: true
+      #permalink: /:title/
+
