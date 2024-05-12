@@ -114,7 +114,7 @@ plt.show()
 {::options parse_block_html="false" /}
 
     
-![png](/assets/images/Jaccard_object_detection_files/Jaccard_object_detection_7_0.png)
+![image](/my-blog/assets/images/Jaccard_object_detection_files/Jaccard_object_detection_7_0.png)
     
 
 
@@ -510,7 +510,7 @@ plt.legend();
 
 {::options parse_block_html="false" /}
     
-![png](/assets/images/Jaccard_object_detection_files/Jaccard_object_detection_21_0.png)
+![image](/my-blog/assets/images/Jaccard_object_detection_files/Jaccard_object_detection_21_0.png)
     
 
 
