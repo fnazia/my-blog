@@ -1,8 +1,11 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-date:   2023-06-01 21:28:50 +0600
+#date:   2023-06-01 21:28:50 +0600
 categories: jekyll update
+#tags: [dev, jekyll, github]
+#description: Jekyll is a static site generator that makes it easy for you to create a website and blog. If you're interested in getting started with Jekyll and GitHub Pages, this in-depth guide is for you.
+#keywords: [getting started with jekyll, jekyll and github pages]
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

@@ -18,18 +18,23 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+<<<<<<< HEAD
 title: Your Blog title
+=======
+title: Notebook
+>>>>>>> b694317 (update with jaccard index post)
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/my-blog" # the subpath of your site, e.g. /blog
+url: https://fnazia.github.io # "https://fnazia.github.io" # the base hostname & protocol for your site, e.g. http://example.com , "http://localhost:4000"
 twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
+markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
@@ -53,3 +58,29 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+include: [_pages]
+
+# Defaults
+defaults:
+  # _posts
+  -
+    scope:
+      type: posts
+      path: _posts
+    values:
+      is_post: true
+      layout: post
+      permalink: /posts/:title/
+      mathjax: true
+  # _pages
+  - 
+    scope:
+      #path: ""
+      type: pages
+      path: _pages
+    values:
+      is_post: false
+      layout: page
+      #permalink: /:title/
+      mathjax: true

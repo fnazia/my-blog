@@ -1,0 +1,81 @@
+/*
+ * Sidebar
+ *
+ * Flexible banner for housing site name, intro, and "footer" content. Starts
+ * out above content in mobile and later moves to the side with wider viewports.
+ */
+
+.sidebar {
+  //display: flex;
+  //flex: 1 1 auto;
+  //justify-content: space-between;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #202020; //rgba(255,255,255,.5);
+  background-color: $background-color; //#F7F9F9; //rgba(255,255,255,.5); //#202020;
+}
+@media (min-width: 48em) {
+  .sidebar {
+    position: fixed;
+    //top: 61.95px; //0;
+    top: 0;
+    left: 2rem; //0;
+    bottom: 0;
+    width: $sidebar-width; //12rem;
+    text-align: left;
+
+  }
+}
+
+/* Sidebar links */
+.sidebar-about a {
+  color: #202020;
+  text-decoration: none;
+}
+
+/* About section */
+.sidebar-about h1 {
+  color: #202020; //#fff;
+  margin-bottom: 0;
+  font-family: "Abril Fatface", serif;
+  font-size: 3rem; //3.25rem;
+}
+
+.sidebar-about p {
+  color: #202020; //#fff;
+}
+
+/* Sidebar nav */
+.sidebar-nav {
+  margin-bottom: 1rem;
+}
+.sidebar-nav a {
+  color: #1756a9; //#026efa; //#2a7ae2;
+}
+.sidebar-nav-item {
+  display: block;
+  line-height: 1.5; //1.75;
+}
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: underline;
+}
+.sidebar-nav-item.active {
+  font-weight: bold;
+}
+
+/* Sticky sidebar
+ *
+ * Add the `sidebar-sticky` class to the sidebar's container to affix it the
+ * contents to the bottom of the sidebar in tablets and up.
+ */
+
+@media (min-width: 48em) {
+  .sidebar-sticky {
+    position: absolute;
+    right:  1rem;
+    top: 1rem;
+    left:   1rem;
+  }
+}
+
